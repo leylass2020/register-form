@@ -1,0 +1,12 @@
+@import "tailwindcss";
+/* prevent default styling for input fields in browsers */
+@layer base {
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+        -webkit-text-fill-color: #4a5565 !important;
+    }
+}
+

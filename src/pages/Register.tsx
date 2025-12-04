@@ -60,11 +60,13 @@ const Register = () => {
   
   return (
     <div className="h-full flex flex-col justify-center items-center max-w-xl w-full mx-auto my-3">
-      <h2 className="text-4xl m-5 font-bold" style={{color:color}}>Registeration</h2>
+      <h2 className="text-4xl m-5 font-bold" style={{color:color}}>
+        Regester Form
+      </h2>
       <form 
         onSubmit={handleSubmit(onSubmit)} 
         action="" 
-        className="w-full gap-4 flex flex-col p-5 pb-6 pt-3 m-5 bg-white shadow-2xl rounded-4xl ">
+        className="w-full gap-2 flex flex-col p-5 pb-6 pt-3 m-5 bg-white shadow-2xl rounded-4xl ">
           
           <FaUser size={40} color={color}  className='w-full m-auto'/>
           {showSuccess && 
@@ -111,7 +113,7 @@ const Register = () => {
           <button 
             disabled={isSubmitting}
             type='submit' 
-            className="w-full text-white text-xl font-bold h-13 rounded-2xl hover:cursor-pointer mt-2 bg-gray-500 hover:bg-red-400 "  >
+            className="w-full text-white text-xl font-bold h-13 rounded-2xl hover:cursor-pointer mt-4 bg-gray-500 hover:bg-red-400 "  >
             {isSubmitting ? 'Registering...' : 'Register'}
           </button>
         <button

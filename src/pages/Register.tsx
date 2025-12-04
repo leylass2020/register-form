@@ -32,6 +32,7 @@ const Register = () => {
     try {
       // simulating when fetching data wait until response
       await new Promise((resolve)=> setTimeout(resolve,1000));
+      console.log(data);
 
       // Here for fetching real data  
       // const response = await fetch('/api/signup', {
